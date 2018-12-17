@@ -64,7 +64,6 @@ def format_6x9(fle):
 
     open_fle.close()
 
-
 def process_file(fle):
     print(fle)
     find_6x9 = re.compile("6x9")
@@ -75,8 +74,7 @@ def process_file(fle):
         format_6x9(fle)
     # Run 9x12
     if re.search(find_9x12, fle):
-        pass
-    format_9x12(fle)
+        format_9x12(fle)
 
 
 def main():
